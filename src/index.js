@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import reducer from './reducer'
-//import {CampFilterAppContainer} from './CampFilterApp';
-import App from './App';
+import {CampFilterAppContainer} from './CampFilterApp';
 import './index.css';
 
 
@@ -174,14 +173,9 @@ function set_state(campgrounds) {
  })
 }
 
-/*ReactDOM.render(
+ReactDOM.render(
   <Provider store={store}>
   <CampFilterAppContainer />
 </Provider>,
-  document.getElementById('root')
-);*/
-
-ReactDOM.render(
-  <App />,
   document.getElementById('root')
 );
